@@ -4,10 +4,7 @@ import image from "./profile/mahdi.jpg";
 
 function App() {
   const fullName = "Mohamed Mehdi Nouira";
-  const handleName = e => {
-    e.preventDefault();
-    alert(fullName);
-  };
+  const handleName = (e) => alert(fullName);
   return (
     <div className="App">
       <Profile
@@ -16,7 +13,16 @@ function App() {
         profession="engineer"
         handleName={handleName}
       >
-        {image}
+        <img
+          style={{
+            width: 120,
+            height: 180,
+            border: "2px #1A5276 solid",
+            borderRadius: 15,
+          }}
+          src={image}
+          alt="profile"
+        />
       </Profile>
     </div>
   );
