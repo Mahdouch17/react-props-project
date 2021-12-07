@@ -4,7 +4,7 @@ import image from "./profile/mahdi.jpg";
 
 function App() {
   const fullName = "Mohamed Mehdi Nouira";
-  const handleName = (e) => alert(fullName);
+  const handleName = () => alert(fullName);
   return (
     <div className="App">
       <Profile

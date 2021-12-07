@@ -19,16 +19,7 @@ const Profile = (props) => {
         }}
         onClick={(e) => props.handleName(e)}
       >
-        <img
-          style={{
-            width: 120,
-            height: 180,
-            border: "2px #1A5276 solid",
-            borderRadius: 15,
-          }}
-          src={props.children}
-          alt="profile"
-        />
+        {props.children}
         <div style={{ fontSize: 24 }}>{props.fullName}</div>
         <div style={{ fontSize: 18 }}>{props.bio}</div>
         <div style={{ fontSize: 18 }}>{props.profession}</div>
